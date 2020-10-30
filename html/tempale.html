@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  
+  <style>
+    
+#quote-carousel {
+  padding: 0 10px 30px 10px;
+  margin-top: 30px;
+  /* Control buttons  */
+  /* Previous button  */
+  /* Next button  */
+  /* Changes the position of the indicators */
+  /* Changes the color of the indicators */
+}
+
+#quote-carousel .carousel-indicators {
+  right: 50%;
+  top: auto;
+  bottom: 0px;
+  margin-right: -19px;
+}
+#quote-carousel .carousel-indicators li {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  cursor: pointer;
+  border: 4px solid #CCC;
+  border-radius: 50px;
+  opacity: 0.4;
+  overflow: hidden;
+  transition: all 1s;
+}
+#quote-carousel .carousel-indicators .active {
+  background: #8d1919;
+  width: 128px;
+  height: 128px;
+  border-radius: 100px;
+  border-color: #5E51C6;
+  opacity: 1;
+  overflow: hidden;
+}
+.carousel-inner {
+  min-height: 300px;
+}
+.item blockquote {
+  border-left: none;
+  margin: 0;
+}
+.item blockquote p:before {
+  content: "\f10d";
+  font-family: 'Fontawesome';
+  float: left;
+  margin-right: 10px;
+}
+.text8 p{
+  text-align: center;
+  font-size: 16px;
+  color: black;
+}
+.text8 span{
+  color: #5E51C6;
+  font-size: 30px;
+}
+.text8{
+  color: #FDA639;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+  </style>
+</head>
+<body>
+  <div class="row">
+    <div class="col-md-12" data-wow-delay="0.2s">
+        <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+            <!-- Bottom Carousel Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#quote-carousel" data-slide-to="0" class="active"><img class="img-responsive " src="../images/person_1.jpg" alt="">
+                </li>
+                <li data-target="#quote-carousel" data-slide-to="1"><img class="img-responsive" src="../images/person_2.jpg" alt="">
+                </li>
+                <li data-target="#quote-carousel" data-slide-to="2"><img class="img-responsive" src="../images/person_3.jpg" alt="">
+                </li>
+                
+            </ol>
+
+            <!-- Carousel Slides / Quotes -->
+            <div class="carousel-inner text-center">
+
+                <!-- Quote 1 -->
+                <div class="item active">
+                    <blockquote>
+                        <div class="row">
+                            <div class="col-sm-8 col-sm-offset-2">
+                                <p>Teachers are enthusiastic and creative in finding the best ways 
+                                    to develop children's curiosity and they really make learning a 
+                                    fun activity for children to pursue. 
+                                    The family is really satisfied with the quality of teachers of BGV Academy!</p>
+                                <small>Steven (The student's father)</small>
+                            </div>
+                        </div>
+                    </blockquote>
+                </div>
+                <!-- Quote 2 -->
+                <div class="item">
+                    <blockquote>
+                        <div class="row">
+                            <div class="col-sm-8 col-sm-offset-2">
+
+                                <p>We are absolutely delighted with our daughter's progress. It is clearly 
+                                    evident that you have re-ignited her 
+                                    passion and her enthusiasm for learning across all subjects.</p>
+                                <small>Jonathan (The student's father)</small>
+                            </div>
+                        </div>
+                    </blockquote>
+                </div>
+                <!-- Quote 3 -->
+                <div class="item">
+                    <blockquote>
+                        <div class="row">
+                            <div class="col-sm-8 col-sm-offset-2">
+                                <p>I feel completely satisfied with the environment, the 
+                                    decoration and the quality of the facilities at BGV, 
+                                    it's a lovely place for the kids.</p>
+                                <small>Katherine (The student's mother)</small>
+                            </div>
+                        </div>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
